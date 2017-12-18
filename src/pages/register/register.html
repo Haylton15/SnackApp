@@ -1,0 +1,46 @@
+<ion-header>
+    
+      <ion-navbar>
+        <ion-title>Register</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    
+    <ion-content padding style="background:url(assets/img/XN09d1YXRhezh9uA5VCO_img.jpg) no-repeat center;background-size:cover;" id="page6">
+      <h3 id="cadastro-heading8" style="color:#000000;font-weight:400; text-align: center;">
+        Para a realização do cadastro, preencha <b>todos</b> os dados a seguir:
+      </h3>  
+      <ion-item >
+            <ion-label stacked >Usuário</ion-label>
+            <ion-input [(ngModel)]="profile.username"></ion-input>
+          
+          </ion-item>
+        
+          <ion-item >
+            <ion-label  stacked>Nome</ion-label>
+            
+              <ion-input [(ngModel)]="profile.firstname" ></ion-input>
+            </ion-item>
+        
+         
+        
+          <ion-item >
+            <ion-label  stacked>Sobrenome</ion-label>
+            <ion-input [(ngModel)]="profile.lastName"></ion-input>
+        
+          </ion-item>
+          
+     
+      <ion-item>
+        <ion-label  stacked>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label  stacked>Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+    
+      <button ion-button outline  color="positive" block (click)="register(user)" >Cadastrar</button>
+    </ion-content>
